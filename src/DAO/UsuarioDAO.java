@@ -14,6 +14,8 @@ public class UsuarioDAO {
 
 			Cursor cursor = bancoDados.rawQuery("SELECT USU_EMAIL, USU_SENHA FROM USUARIO WHERE USU_EMAIL = ?", new String[] { email});
 
+			///Pedro Gay
+			
 			if (cursor.getCount() > 0) {
 				cursor.close();
 				bancoDados.close();
